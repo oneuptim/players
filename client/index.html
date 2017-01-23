@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="js/config/routes.js" charset="utf-8"></script>
+    <script src="js/controllers/associationscontroller.js" charset="utf-8"></script>
+    <script src="js/controllers/playerscontroller.js" charset="utf-8"></script>
+    <script src="js/controllers/teamscontroller.js" charset="utf-8"></script>
+    <script src="js/factories/playersfactory.js" charset="utf-8"></script>
+    <script src="js/factories/teamsfactory.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+  </head>
+  <body>
+    <div class="wrapper" ng-app='myApp'>
+        <h1><a href="#!/players">Players</a> | <a href="#!/teams">Teams</a> | <a href="#!/associations">Associations</a></h1>
+        <div ng-view="">
+        </div>
+  </div>
+  </body>
+</html>
